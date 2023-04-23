@@ -1,3 +1,3 @@
-## 0.0.1
+## 1.0.0
 
-* TODO: Describe initial release.
+* A Flutter package for generating Font Awesome icons as SVG images, with support for duotone icons.
