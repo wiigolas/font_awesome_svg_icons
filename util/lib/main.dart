@@ -98,11 +98,11 @@ void readAndPickMetadata(
     styles.addAll(iconStyles);
 
     // Extract the search terms and aliases for the icon.
-    final List searchTermsRaw = icon['search']?['terms'] ?? [];
-    final searchTerms = searchTermsRaw.map((e) => e.toString()).toList();
+    final List<String> searchTermsRaw = icon['search']?['terms'] ?? [];
+    final searchTerms = searchTermsRaw.map((String string) => string).toList();
 
-    final List aliasesRaw = icon['aliases']?['names'] ?? [];
-    final aliases = aliasesRaw.map((e) => e.toString()).toList();
+    final List<String> aliasesRaw = icon['aliases']?['names'] ?? [];
+    final aliases = aliasesRaw.map((String string) => string).toList();
 
     // Extract the SVG data for the icon.
     final Map<String, dynamic> svg = icon['svg'] ?? [];
